@@ -1,7 +1,7 @@
 ---
 title: "[Pin] Keep up with New Trends"
-date: 2018-02-05T12:48:36+08:00
-lastmod: 2018-02-05T12:48:36+08:00
+date: 2018-02-06T14:18:36+08:00
+lastmod: 2018-02-06T14:18:36+08:00
 draft: false
 tags: ["paper", "github"]
 categories: ["Research"]
