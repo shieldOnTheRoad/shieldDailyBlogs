@@ -25,6 +25,10 @@ mathjax: false
 <br>
 # **<u>arXiv</u>**
 
+#### **Mixed Link Networks**
+- keywords: `image-cls`
+- arxiv: https://arxiv.org/abs/1802.01808
+
 #### **Object Detection in Videos by Short and Long Range Object Linking**
 - keywords: `object-det`
 - arxiv: https://arxiv.org/abs/1801.09823

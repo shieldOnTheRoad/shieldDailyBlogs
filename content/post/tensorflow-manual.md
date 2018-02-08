@@ -18,12 +18,12 @@ toc: false
 mathjax: true
 ---
 
-我的`tensorflow`速查手册。API这玩意，经久不用就容易忘记，记录下来。
+我的`tensorflow`速查手册。计算机语言这玩意，经久不用就容易忘记，记录下来。
 
 <!--more-->
 <br>
 
-## 参考资料
+## # **参考资料**
 1. [CS 20: Tensorflow for Deep Learning Research](http://web.stanford.edu/class/cs20si/index.html)
 2. [CS 20SI: Tensorflow for Deep Learning Research](https://www.youtube.com/watch?v=g-EvyKpZjmQ&list=PLIDllPt3EQZoS8gCP3cw273Cq9puuPLTg)
 3. [jtoy/awesome-tensorflow](https://github.com/jtoy/awesome-tensorflow)
