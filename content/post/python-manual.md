@@ -13,7 +13,7 @@ weight: 10
 # P.S. comment can only be closed
 # comment: false
 # autoCollapseToc: false
-# reward: false
+# reward: falsed
 toc: false
 mathjax: true
 ---
@@ -21,6 +21,34 @@ mathjax: true
 我的`python`速查手册。计算机语言这玩意，经久不用就容易忘记，记录下来。
 
 <!--more-->
+<br>
+
+## #0 **INDEXING**
+| api           | description        | category          |
+|:--------------|:-------------------|:------------------|
+| np.loadtxt('file.txt', delimiter=',') | load .txt file | <font face='Times New Roman' color='#6699ff'>IMPORTING / EXPORTING</font> |
+| np.genfromtxt('file.csv', delimiter=',') | load .csv file | |
+| np.savetxt('file.txt', arr, delimiter=',') | writes to a text file | |
+| np.zeros(3) | 3x1 arr with all values 0 | <font face='Times New Roman' color='#6699ff'>CREATING ARRAYS</font> |
+| np.ones((3,4)) | 3x4 arr with all values 1 | |
+| np.eye(5) | 5x5 array of Identity matrix| |
+| np.linspace(0, 100, 6) | 6 uniform values from 0 to 100 | |
+| np.full((2,3), 8) | 2x3 arr with all values 8 | |
+| np.random.rand(4, 5) | 4x5 arr of random val in [0,1) | |
+| np.random.randint(5, size=(2,3)) | 2x3 arr of random ints in [0, 5) | |
+| np.copy(arr) | copies arr to new memory | <font face='Times New Roman' color='#6699ff'>COPY / SORT / RESHAPE</font> |
+| arr.sort(axis=0) | sorts specific axis of arr. | |
+| two_d_arr.flatten() | flatten 2D array to 1D | |
+| arr.reshape(3, 4) | reshape arr. to 3x4 | |
+| arr.resize((5,6)) | change arr. to 5x6  | |
+| np.append(arr, value) | append value to end of arr. | <font face='Times New Roman' color='#6699ff'>ADD / RM ELEMENTS</font> |
+| np.insert(arr, 2, value) | inserts val into arr. before idx 2 | |
+| np.delete(arr, 3, axis=0) | deletes row on index 3 of arr. | |
+| np.concatenate((arr1,arr2), axis=0) | add arr2 as rows to arr1 | <font face='Times New Roman' color='#6699ff'>COMBINING / SPLIT</font> |
+| np.concatenate((arr1,arr2), axis=1) | add arr2 as columns to arr1 | |
+| np.split(arr, 3) | split arr into 3 sub-arr | |
+| np.hsplit(arr, 5) | split arr horizontally into 5 arr | |
+
 <br>
 
 ## #1 **PYTHON API**
@@ -80,6 +108,18 @@ print(make_bread())
 # a: 打印当前函数的参数列表
 # s: 执行当前代码行，并停在第一个能停的地方（相当于单步进入）
 # n: 继续执行到当前函数的下一行，或者当前行直接返回（单步跳过）
+```
+
+#### **2.2 virtualenv**
+新建python虚拟环境。
+```shell
+$ pip install virtualenv
+$ # virtualenv -p /usr/local/bin/python3.4 ENV3.4
+$ # --system-site-packages继承原有所有包
+$ virtualenv --no-site-package venv
+$ source ./bin/activate  # 或者source ./Scripts/activate
+$ pip list  # 查看当前环境依赖包信息
+$ ./bin/deactivate  # 停止使用虚拟程序
 ```
 
 <br>
