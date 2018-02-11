@@ -1,7 +1,7 @@
 ---
 title: "Python Manual"
 date: 2018-02-06T12:48:36+08:00
-lastmod: 2018-02-08T08:48:36+08:00
+lastmod: 2018-02-11T15:48:36+08:00
 draft: false
 tags: ["python", "code"]
 categories: ["Program"]
@@ -32,6 +32,7 @@ mathjax: true
 | np.zeros(3) | 3x1 arr with all values 0 | <font face='Times New Roman' color='#6699ff'>CREATING ARRAYS</font> |
 | np.ones((3,4)) | 3x4 arr with all values 1 | |
 | np.eye(5) | 5x5 array of Identity matrix| |
+| np.diag(np.arange(1,4), k=0) | create a diagonal matrix | |
 | np.linspace(0, 100, 6) | 6 uniform values from 0 to 100 | |
 | np.full((2,3), 8) | 2x3 arr with all values 8 | |
 | np.random.rand(4, 5) | 4x5 arr of random val in [0,1) | |
@@ -39,15 +40,28 @@ mathjax: true
 | np.copy(arr) | copies arr to new memory | <font face='Times New Roman' color='#6699ff'>COPY / SORT / RESHAPE</font> |
 | arr.sort(axis=0) | sorts specific axis of arr. | |
 | two_d_arr.flatten() | flatten 2D array to 1D | |
-| arr.reshape(3, 4) | reshape arr. to 3x4 | |
-| arr.resize((5,6)) | change arr. to 5x6  | |
-| np.append(arr, value) | append value to end of arr. | <font face='Times New Roman' color='#6699ff'>ADD / RM ELEMENTS</font> |
-| np.insert(arr, 2, value) | inserts val into arr. before idx 2 | |
-| np.delete(arr, 3, axis=0) | deletes row on index 3 of arr. | |
+| arr.reshape(3, 4) | reshape arr to 3x4 | |
+| arr.resize((5,6)) | change arr to 5x6  | |
+| np.append(arr, value) | append value to end of arr | <font face='Times New Roman' color='#6699ff'>ADD / RM ELEMENTS</font> |
+| np.insert(arr, 2, value) | inserts val into arr. before idx2 | |
+| np.delete(arr, 3, axis=0) | deletes row on idx3 of arr | |
 | np.concatenate((arr1,arr2), axis=0) | add arr2 as rows to arr1 | <font face='Times New Roman' color='#6699ff'>COMBINING / SPLIT</font> |
 | np.concatenate((arr1,arr2), axis=1) | add arr2 as columns to arr1 | |
 | np.split(arr, 3) | split arr into 3 sub-arr | |
 | np.hsplit(arr, 5) | split arr horizontally into 5 arr | |
+| arr<5 | return an arr with boolean val | <font face='Times New Roman' color='#6699ff'>INDEX / SLICE / SUBSET</font> |
+| (arr1<3) & (arr2>5) | return an arr with boolean val | |
+| ~arr | invert a boolean arr | |
+| arr[1::2] | select val from idx1 with step2 | |
+| np.nonzero(arr) | find idxs of ~0 val from arr | |
+| np.pad(arr, pad_width, mode) | add a border around arr | |
+| np.ceil(arr) | round up to the nearest int | <font face='Times New Roman' color='#6699ff'>VECTOR MATH</font> |
+| np.floor(arr) | round down to the nearest int | |
+| np.round(arr) | round to the nearest int | |
+| arr.size * arr.itemsize | find memory size of any arr | <font face='Times New Roman' color='#6699ff'>INFO STATISTICS</font> |
+| np.info(arr) | get info of arr | |
+| print(0.3 == 3 * 0.1) | return False :( | <font face='Times New Roman' color='#6699ff'>NOTE THAT</font> |
+
 
 <br>
 
@@ -129,5 +143,6 @@ $ ./bin/deactivate  # 停止使用虚拟程序
 2. [Intermediate Python](http://book.pythontips.com/en/latest/)
 3. [100 numpy exercises](https://github.com/rougier/numpy-100/blob/master/100%20Numpy%20exercises.md)
 4. [awesome-python](https://github.com/vinta/awesome-python)
+5. [Data Science Cheat Sheet - NumPy](http://t.cn/RXKw3Ui)
 
 <br>
