@@ -23,7 +23,7 @@ mathjax: true
 <!--more-->
 <br>
 
-## #0 **INDEXING**
+## #0 **CHEAT SHEET**
 | api           | description        | category          |
 |:--------------|:-------------------|:------------------|
 | np.loadtxt('file.txt', delimiter=',') | load .txt file | <font face='Times New Roman' color='#6699ff'>IMPORTING / EXPORTING</font> |
@@ -42,6 +42,7 @@ mathjax: true
 | two_d_arr.flatten() | flatten 2D array to 1D | |
 | arr.reshape(3, 4) | reshape arr to 3x4 | |
 | arr.resize((5,6)) | change arr to 5x6  | |
+| np.tile(np.array([[0,1], [1,0]]), (4,4)) | create a 8x8 checkerboard | |
 | np.append(arr, value) | append value to end of arr | <font face='Times New Roman' color='#6699ff'>ADD / RM ELEMENTS</font> |
 | np.insert(arr, 2, value) | inserts val into arr. before idx2 | |
 | np.delete(arr, 3, axis=0) | deletes row on idx3 of arr | |
@@ -55,6 +56,7 @@ mathjax: true
 | arr[1::2] | select val from idx1 with step2 | |
 | np.nonzero(arr) | find idxs of ~0 val from arr | |
 | np.pad(arr, pad_width, mode) | add a border around arr | |
+| np.unravel_index(10, (6,7,8)) |  the index of the 10th element | |
 | np.ceil(arr) | round up to the nearest int | <font face='Times New Roman' color='#6699ff'>VECTOR MATH</font> |
 | np.floor(arr) | round down to the nearest int | |
 | np.round(arr) | round to the nearest int | |

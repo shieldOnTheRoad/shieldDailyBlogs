@@ -28,6 +28,7 @@ mathjax: false
 #### **Mixed Link Networks**
 - keywords: `image-cls`
 - arxiv: https://arxiv.org/abs/1802.01808
+- info: *Submitted on 6 Feb 2018*
 
 #### **Object Detection in Videos by Short and Long Range Object Linking**
 - keywords: `object-det`
