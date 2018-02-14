@@ -73,6 +73,11 @@ mathjax: false
 # **<u>CVPR</u>** <font size="4">2017</font> 
 <font>open access: </font> http://openaccess.thecvf.com/CVPR2017.py
 
+#### **Deep Feature Flow for Video Recognition**
+- keywords: `video-cls`
+- arxiv: https://arxiv.org/abs/1611.07715
+- github: https://github.com/msracver/Deep-Feature-Flow
+
 #### **Surveillance Video Parsing with Single Frame Supervision**
 - keywords: `video-cls`
 - arxiv: https://arxiv.org/abs/1611.09587
@@ -127,8 +132,7 @@ mathjax: false
 <font>open access: </font> https://recsys.acm.org/recsys16/accepted-contributions/#content-tab-1-0-tab
 
 #### **Deep Neural Networks for YouTube Recommendations**
-- keywords: `yt-recommend`
+- keywords: `recsys`
 - source: [p191-covington.pdf](https://dl.acm.org/ft_gateway.cfm?id=2959190&ftid=1785037&dwn=1&CFID=5058148&CFTOKEN=32105a60929555d9-F01FA8C2-FD4D-E25D-B221ED336ED6F23B)
-
 
 <br>
