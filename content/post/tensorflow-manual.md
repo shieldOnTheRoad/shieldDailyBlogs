@@ -23,6 +23,14 @@ mathjax: true
 <!--more-->
 <br>
 
+## #1 **PYTHON API**
+#### **1.1 Map,Filter和Reduce**
+
+<br>
+
+## #2 **知识点**
+
+
 ## # **参考资料**
 1. [CS 20: Tensorflow for Deep Learning Research](http://web.stanford.edu/class/cs20si/index.html)
 2. [CS 20SI: Tensorflow for Deep Learning Research](https://www.youtube.com/watch?v=g-EvyKpZjmQ&list=PLIDllPt3EQZoS8gCP3cw273Cq9puuPLTg)

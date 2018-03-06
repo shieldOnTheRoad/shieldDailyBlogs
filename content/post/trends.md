@@ -82,6 +82,10 @@ mathjax: false
 - keywords: `video-cls`
 - arxiv: https://arxiv.org/abs/1611.09587
 
+#### **The More You Know: Using Knowledge Graphs for Image Classification**
+- keywords: `image-cls` `knowledge-graph`
+- arxiv: https://arxiv.org/abs/1612.04844
+
 #### **Spatio-Temporal Vector of Locally Max Pooled Features for Action Recognition in Videos** 
 - keywords: `video-cls`
 - source: [Duta_Spatio-Temporal_Vector_of_CVPR_2017_paper.pdf](http://openaccess.thecvf.com/content_cvpr_2017/papers/Duta_Spatio-Temporal_Vector_of_CVPR_2017_paper.pdf)
@@ -89,7 +93,6 @@ mathjax: false
 #### **Object Detection in Videos with Tubelet Proposal Networks**
 - keywords: `video-object-det`
 - arxiv: https://arxiv.org/abs/1702.06355
-
 
 <br>
 # **<u>ICCV</u>** <font size="4">2017</font> 
@@ -126,6 +129,9 @@ mathjax: false
 - keywords：`object-instance-search`
 - source：https://www.ijcai.org/proceedings/2017/635
 
+#### **Object Detection Meets Knowledge Graphs**
+- keywords：`object-det` `knowledge-graph`
+- source：http://static.ijcai.org/proceedings-2017/0230.pdf
 
 <br>
 # **<u>RecSys</u>** <font size="4">2016</font>
