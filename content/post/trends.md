@@ -41,6 +41,11 @@ mathjax: false
 - github: https://github.com/alexattia/ExtendedTinyFaces
 - info: *Submitted on 19 Jan 2018 (v1), last revised 24 Jan 2018 (this version, v2)*
 
+#### **Appearance-and-Relation Networks for Video Classification**
+- keywords: `video-cls`
+- arxiv: https://arxiv.org/abs/1711.09125
+- github: https://github.com/wanglimin/ARTNet
+- info: *Submitted on 24 Nov 2017*
 
 <br>
 # **<u>ICLR</u>** <font size="4">2018</font>
@@ -89,6 +94,11 @@ mathjax: false
 #### **Spatio-Temporal Vector of Locally Max Pooled Features for Action Recognition in Videos** 
 - keywords: `video-cls`
 - source: [Duta_Spatio-Temporal_Vector_of_CVPR_2017_paper.pdf](http://openaccess.thecvf.com/content_cvpr_2017/papers/Duta_Spatio-Temporal_Vector_of_CVPR_2017_paper.pdf)
+
+#### **ActionVLAD: Learning spatio-temporal aggregation for action classification** 
+- keywords: `video-cls`
+- arxiv: https://arxiv.org/abs/1704.02895
+- github: https://github.com/rohitgirdhar/ActionVLAD/
 
 #### **Object Detection in Videos with Tubelet Proposal Networks**
 - keywords: `video-object-det`
