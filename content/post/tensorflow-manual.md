@@ -2,7 +2,7 @@
 title: "Tensorflow Manual"
 date: 2018-02-06T12:47:36+08:00
 lastmod: 2018-02-06T12:47:36+08:00
-draft: false
+draft: true
 tags: ["tensorflow", "python", "code"]
 categories: ["Program"]
 author: 'shield'
