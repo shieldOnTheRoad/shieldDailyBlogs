@@ -18,8 +18,6 @@ weight: 10
 mathjax: true
 ---
 
-数据挖掘十大经典算法：`kmeans` `knn` `pagerank`
-
->此系列文章介绍《数据挖掘十大经典算法》原理及其应用，附带`python`或`c++`实现代码。
+数据挖掘十大经典算法：`kmeans` `knn` `pagerank`。此系列文章介绍《数据挖掘十大经典算法》原理及其应用，附带`python`或`c++`实现代码。
 
 <!--more-->
