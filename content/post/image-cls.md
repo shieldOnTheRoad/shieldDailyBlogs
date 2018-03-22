@@ -2,7 +2,7 @@
 title: "A Survey for Image Classification"
 date: 2018-03-21T12:47:36+08:00
 lastmod: 2018-03-21T12:47:36+08:00
-draft: true
+draft: false
 tags: ["image-cls"]
 categories: ["Research"]
 author: 'shield'
