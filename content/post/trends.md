@@ -1,7 +1,7 @@
 ---
 title: "[Pin] Keep up with New Trends"
-date: 2018-03-21T14:18:36+08:00
-lastmod: 2018-02-21T14:18:36+08:00
+date: 2018-03-23T13:18:36+08:00
+lastmod: 2018-02-23T13:18:36+08:00
 draft: false
 tags: ["paper", "github"]
 categories: ["Research"]
@@ -24,6 +24,11 @@ mathjax: false
 
 <br>
 # **<u>arXiv</u>**
+
+#### **Group Normalization**
+- keywords: `optimization`
+- arxiv: https://arxiv.org/abs/1803.08494
+- info: *Submitted on 22 Mar 2018*
 
 #### **Mixed Link Networks**
 - keywords: `image-cls`
