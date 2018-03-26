@@ -1,7 +1,7 @@
 ---
 title: "A Survey for Image Classification"
 date: 2018-03-21T12:47:36+08:00
-lastmod: 2018-03-23T12:47:36+08:00
+lastmod: 2018-03-26T10:47:36+08:00
 draft: false
 tags: ["image-cls"]
 categories: ["Research"]
@@ -37,7 +37,7 @@ mathjax: true
 &emsp;&emsp;密集提取的底层特征中包含了大量的冗余与噪声，为提高特征表达的鲁棒性，需要使用一种特征变换算法对底层特征进行编码，从而获得更具区分性、更加鲁棒的特征表达，这一步对图像分类的性能具有至关重要的作用，因而大量的研究工作都集中在寻找更加强大的特征编码方法，重要的特征编码算法包括向量量化编码、稀疏编码、局部线性约束编码、VLAD <sup>[[13]](#ref13)</sup>（Vector of Locally Aggregated Descriptors）向量编码、Fisher向量编码 <sup>[[14]](#ref14)</sup>等。
 
 #### **&emsp;&emsp;3）特征汇聚**
-&emsp;&emsp;空间特征汇聚是特征编码后进行的特征集整合操作，通过对编码后的特征，每一维都取其最大值或者平均值，得到一个紧致的特征向量作为图像的特征表达。这一步得到的图像表达可以获得一定的特征不变性，同时也避免了使用特征集进行图像表达的高额代价。最大值汇聚在绝大部分情况下的性能要优于平均值汇，其在图像分类中使用最为广泛。由于图像通常具有极强的空间结构约束，空间金字塔匹配SPM （Spatial Pyramid Matching）提出将图像均匀分块，然后每个区块里面单独做特征汇聚操作并将所有特征向量拼接起来作为图像最终的特征表达。
+&emsp;&emsp;空间特征汇聚是特征编码后进行的特征集整合操作，通过对编码后的特征，每一维都取其最大值或者平均值，得到一个紧致的特征向量作为图像的特征表达。这一步得到的图像表达可以获得一定的特征不变性，同时也避免了使用特征集进行图像表达的高额代价。最大值汇聚在绝大部分情况下的性能要优于平均值汇，其在图像分类中使用最为广泛。由于图像通常具有极强的空间结构约束，空间金字塔匹配SPM <sup>[[15]](#ref15)</sup>（Spatial Pyramid Matching）提出将图像均匀分块，然后每个区块里面单独做特征汇聚操作并将所有特征向量拼接起来作为图像最终的特征表达。
 
 #### **&emsp;&emsp;4）分类器设计**
 &emsp;&emsp;使用支持向量机等分类器进行分类。从图像提取到特征表达之后，一张图像可以使用一个固定维度的向量进行描述，接下来就是学习一个分类器对图像进行分类．这个时候可以选择的分类器就很多了，常用的分类器有支持向量机、犓近邻、神经网络、随机森林等。基于最大化边界的支持向量机是使用最为广泛的分类器之一，在图像分类任务上性能很好，特别是使用了核方法的支持向量。
@@ -73,7 +73,7 @@ mathjax: true
 
 <br>
 ## #4 **关键技术**
-&emsp;&emsp;Keywords: `HOG` `SIFT` `BOF` `VLAD` `LeNet` `AlexNet` `VGGNet` `GoogleNet` `ResNet`
+&emsp;&emsp;Keywords: `HOG` `SIFT` `BOF` `VLAD` `LeNet` `AlexNet` `ZFNet` `VGGNet` `GoogleNet` `ResNet` `DenseNet` `ResNeXt` `SENet`
 
 ### **4.1 HOG** <sup>[[转载]](#ref07)</sup><sup>[[11]](#ref11)</sup>
 &emsp;&emsp;Histogram of oriented gradient, 梯度直方图。将图像分为小的细胞单元(cells)，每个细胞单元计算一个梯度方向(或边缘方向)直方图。为了对光照和阴影有更好的不变性，需要对直方图进行对比度归一化。将检测窗口中的所有块的HOG描述子组合起来就形成了最终的特征向量。
@@ -152,7 +152,13 @@ $$ D(x,y,\sigma) = (G(x,y,k^{n}\sigma) - G(x,y,k^{n-1}\sigma)) * I(x,y) $$
 - 使用批量随机梯度下降方法对模型进行训练，同时利用动量和权重衰减技术。
 - 使用dropout方法（利用dropout方法类似于随机森林随机抽取特征，可缓解模型过拟合）
 
-### **4.4 VGGNet** <sup>[[4]](#ref04)</sup>
+### **4.4 ZFNet** <sup>[[3]](#ref04)</sup>
+&emsp;&emsp;`coming soon...`
+
+### **4.5 VGGNet** <sup>[[4]](#ref04)</sup>
+&emsp;&emsp;`coming soon...`
+
+### **4.6 GoogleNet** <sup>[[5]](#ref05)</sup>
 &emsp;&emsp;`coming soon...`
 
 <br>
@@ -171,6 +177,6 @@ $$ D(x,y,\sigma) = (G(x,y,k^{n}\sigma) - G(x,y,k^{n-1}\sigma)) * I(x,y) $$
 1. <a id="ref12">[Distinctive Image Features from Scale-Invariant Keypoints](https://www.cse.unr.edu/~bebis/CS491Y/Papers/Lowe04.pdf)</a>
 1. <a id="ref13">[Aggregating local descriptors into a compact image representation](http://ieeexplore.ieee.org/document/5540039/)</a>
 1. <a id="ref14">[Fisher kernels on visual vocabularies for image categorization](http://www.europe.naverlabs.com/layout/set/print/content/download/20837/148502/file/2006-034.pdf)</a>
-
+1. <a id="ref15">[Beyond Bags of Features: Spatial Pyramid Matchingfor Recognizing Natural Scene Categories](http://mplab.ucsd.edu/~marni/Igert/Lazebnik_06.pdf)</a>
 
 <br>
