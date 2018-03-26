@@ -155,8 +155,10 @@ $$ D(x,y,\sigma) = (G(x,y,k^{n}\sigma) - G(x,y,k^{n-1}\sigma)) * I(x,y) $$
 ### **4.4 ZFNet** <sup>[[3]](#ref04)</sup>
 &emsp;&emsp;`coming soon...`
 
-### **4.5 VGGNet** <sup>[[4]](#ref04)</sup>
-&emsp;&emsp;`coming soon...`
+### **4.5 VGGNet** <sup>[[4]](#ref04)</sup><sup>[[16]](#ref04)</sup>
+&emsp;&emsp;VGGNet是ILSVRC 2014竞赛的第二名网络，Top5的错误率为7.3%，由牛津大学的Karen Simonyan和 Andrew Zisserman实现。它主要的贡献是展示出网络的深度是算法优良性能的关键部分。网络的结构非常一致，从头到尾均使用3x3的卷积和2x2的池化。相比于ILSVRC 2012的第一名AlexNet，它们的网络结构相似，均是卷积池化 -- 卷积池化 -- ··· -- 全连接的连接方式，不同的是kernel大小、卷积的stride，网络的深度以及VGGNet使用了更小卷积核。使用更小的卷积核（3X3）能有效减少模型参数，压缩模型大小。也因此使得VGGNet耗费更多计算资源。VGGNet的网络结构如下图。
+
+{{% figure class="center" src="../../img/vggnet.png" title="VGGNet模型结构图" %}}
 
 ### **4.6 GoogleNet** <sup>[[5]](#ref05)</sup>
 &emsp;&emsp;`coming soon...`
@@ -178,5 +180,7 @@ $$ D(x,y,\sigma) = (G(x,y,k^{n}\sigma) - G(x,y,k^{n-1}\sigma)) * I(x,y) $$
 1. <a id="ref13">[Aggregating local descriptors into a compact image representation](http://ieeexplore.ieee.org/document/5540039/)</a>
 1. <a id="ref14">[Fisher kernels on visual vocabularies for image categorization](http://www.europe.naverlabs.com/layout/set/print/content/download/20837/148502/file/2006-034.pdf)</a>
 1. <a id="ref15">[Beyond Bags of Features: Spatial Pyramid Matchingfor Recognizing Natural Scene Categories](http://mplab.ucsd.edu/~marni/Igert/Lazebnik_06.pdf)</a>
+1. <a id="ref16">[vgg-16 caffe graph](http://ethereon.github.io/netscope/#/preset/vgg-16)</a>
+1. <a id="ref99">[[useful link] draw caffe model](https://dgschwend.github.io/netscope/#/editor)</a>
 
 <br>
