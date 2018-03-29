@@ -23,7 +23,7 @@ mathjax: false
 <!--more-->
 
 <br>
-# **<u>arXiv</u>**
+# **<u>arXiv</u> / <u>preprints</u>**
 
 #### **Group Normalization**
 - keywords: `optimization`
@@ -34,6 +34,10 @@ mathjax: false
 - keywords: `image-cls`
 - arxiv: https://arxiv.org/abs/1802.01808
 - info: *Submitted on 6 Feb 2018*
+
+#### **YOLOv3: An Incremental Improvement**
+- keywords: `object-det`
+- source: https://pjreddie.com/media/files/papers/YOLOv3.pdf
 
 #### **Object Detection in Videos by Short and Long Range Object Linking**
 - keywords: `object-det`
@@ -51,6 +55,24 @@ mathjax: false
 - arxiv: https://arxiv.org/abs/1711.09125
 - github: https://github.com/wanglimin/ARTNet
 - info: *Submitted on 24 Nov 2017*
+
+#### **End-to-End Video Classification with Knowledge Graphs**
+- keywords: `video-cls` `knowledge-graph`
+- arxiv: https://arxiv.org/abs/1711.01714v1
+- info: *Submitted on 6 Nov 2017*
+
+#### **Expeditious Generation of Knowledge Graph Embeddings**
+- keywords: `knowledge-graph`
+- arxiv: https://arxiv.org/abs/1803.07828v1
+- info: *Submitted on 21 Mar 2018*
+
+<br>
+# **<u>CVPR</u>** <font size="4">2018</font> 
+<font>open access: </font> http://cvpr2018.thecvf.com/
+
+#### **CosFace: Large Margin Cosine Loss for Deep Face Recognition**
+- keywords: `optimization` `image-cls`
+- arxiv: https://arxiv.org/abs/1801.09414
 
 <br>
 # **<u>ICLR</u>** <font size="4">2018</font>
