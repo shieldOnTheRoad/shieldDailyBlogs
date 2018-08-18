@@ -2,7 +2,7 @@
 title: "Caffe2 Intro"
 date: 2018-02-04T18:03:09+08:00
 lastmod: 2018-02-04T18:03:09+08:00
-draft: false
+draft: true
 tags: ["caffe2", "code"]
 categories: ["Deep Learning"]
 author: 'shield'
